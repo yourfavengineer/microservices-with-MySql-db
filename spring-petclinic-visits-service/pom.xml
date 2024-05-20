@@ -6,6 +6,7 @@
 	<groupId>org.springframework.samples.petclinic.visits</groupId>
 	<artifactId>spring-petclinic-visits-service</artifactId>
 	<packaging>jar</packaging>
+    <version>2.1.2</version>
 	<description>Spring PetClinic Visits Service</description>
 
     <parent>
@@ -103,6 +104,10 @@
                             <groupId>com.spotify</groupId>
                             <artifactId>docker-maven-plugin</artifactId>
                             <version>${docker.plugin.version}</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-maven-plugin</artifactId>
                         </plugin>
                     </plugins>
                 </build>

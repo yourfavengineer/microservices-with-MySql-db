@@ -6,6 +6,7 @@
 	<groupId>org.springframework.samples.petclinic.vets</groupId>
 	<artifactId>spring-petclinic-vets-service</artifactId>
 	<packaging>jar</packaging>
+    <version>2.1.2.RELEASE</version>
 	<description>Spring PetClinic Vets Service</description>
 
 	<parent>
@@ -120,6 +121,10 @@
                         <groupId>com.spotify</groupId>
                         <artifactId>docker-maven-plugin</artifactId>
                         <version>${docker.plugin.version}</version>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-maven-plugin</artifactId>
                     </plugin>
                 </plugins>
             </build>

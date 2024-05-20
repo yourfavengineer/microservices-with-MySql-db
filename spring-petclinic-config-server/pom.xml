@@ -6,6 +6,7 @@
 	<groupId>org.springframework.samples.petclinic.config</groupId>
 	<artifactId>spring-petclinic-config-server</artifactId>
 	<packaging>jar</packaging>
+    <version>2.1.2</version>
 	<description>Spring PetClinic Config Server</description>
 
     <parent>
@@ -23,9 +24,11 @@
         <!-- Spring Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>2.1.2</version>
+            <scope>import</scope>
+            <type>pom</type>
+        </dependency>   
 
         <!-- Spring Cloud -->
 		<dependency>
@@ -61,6 +64,10 @@
                         <groupId>com.spotify</groupId>
                         <artifactId>docker-maven-plugin</artifactId>
                         <version>${docker.plugin.version}</version>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-maven-plugin</artifactId>
                     </plugin>
                 </plugins>
             </build>
