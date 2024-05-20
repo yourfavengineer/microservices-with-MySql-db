@@ -6,7 +6,6 @@
 	<groupId>org.springframework.samples.petclinic.client</groupId>
 	<artifactId>spring-petclinic-customers-service</artifactId>
 	<packaging>jar</packaging>
-    <version>1.0.0</version>
 	<description>Spring PetClinic Customers Service</description>
 
 	<parent>
@@ -33,8 +32,14 @@
 		</dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>    
+        </dependency>
+
         <!-- Spring Cloud -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
