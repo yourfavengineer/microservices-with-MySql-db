@@ -178,6 +178,8 @@
         <repository>
             <id>repository.spring.milestone</id>
             <name>Spring Milestone Repository</name>
+            <url>https://github.com/cmakkaya/microservices-with-MySql-db.git</url>
+
         </repository>
     </repositories>
 
