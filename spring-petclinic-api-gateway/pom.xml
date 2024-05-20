@@ -7,7 +7,6 @@
     <artifactId>spring-petclinic-api-gateway</artifactId>
     <packaging>jar</packaging>
     <description>Spring PetClinic API Gateway</description>
-    <version>1.0.0</version>
 
     <parent>
         <groupId>org.springframework.samples</groupId>
@@ -47,6 +46,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Spring Cloud -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
