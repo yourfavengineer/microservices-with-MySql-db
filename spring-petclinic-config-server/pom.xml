@@ -6,6 +6,7 @@
 	<groupId>org.springframework.samples.petclinic.config</groupId>
 	<artifactId>spring-petclinic-config-server</artifactId>
 	<packaging>jar</packaging>
+    <version>1.0.0</version>
 	<description>Spring PetClinic Config Server</description>
 
     <parent>

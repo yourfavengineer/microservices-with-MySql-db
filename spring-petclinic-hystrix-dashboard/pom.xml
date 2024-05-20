@@ -8,7 +8,7 @@
         <version>2.1.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <version>1.0.0</version>
     <artifactId>spring-petclinic-hystrix-dashboard</artifactId>
     <description>Circuit breaker dashboard with with Spring Cloud Netflix Hystrix</description>
 

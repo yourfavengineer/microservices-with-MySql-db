@@ -6,6 +6,7 @@
 	<groupId>org.springframework.samples.petclinic.vets</groupId>
 	<artifactId>spring-petclinic-vets-service</artifactId>
 	<packaging>jar</packaging>
+    <version>1.0.0</version>
 	<description>Spring PetClinic Vets Service</description>
 
 	<parent>
