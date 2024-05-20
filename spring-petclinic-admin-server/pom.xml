@@ -7,7 +7,6 @@
     <groupId>org.springframework.samples.petclinic.admin</groupId>
     <artifactId>spring-petclinic-admin-server</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
     <description>Spring Boot Admin server</description>
 
     <parent>
