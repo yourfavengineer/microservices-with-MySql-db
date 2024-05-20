@@ -6,7 +6,6 @@
     <groupId>org.springframework.samples.petclinic.discovery</groupId>
     <artifactId>spring-petclinic-discovery-server</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
     <description>Spring PetClinic Discovery Server</description>
 
     <parent>
@@ -21,7 +20,13 @@
     </properties>
 
     <dependencies>
-        <!-- Spring Boot -->    
+        <!-- Spring Boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Spring Cloud -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
