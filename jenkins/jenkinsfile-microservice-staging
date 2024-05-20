@@ -3,16 +3,16 @@ pipeline {
     environment {
         PATH=sh(script:"echo $PATH:/usr/local/bin", returnStdout:true).trim()
         APP_NAME="petclinic"
-        APP_REPO_NAME="**********"
+        APP_REPO_NAME="springapp/microservices-application-staging"
         AWS_ACCOUNT_ID=sh(script:'export PATH="$PATH:/usr/local/bin" && aws sts get-caller-identity --query Account --output text', returnStdout:true).trim()
         AWS_REGION="us-east-1"
         ECR_REGISTRY="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
-        RANCHER_URL="**********"
+        RANCHER_URL="ranchertr.personalme.xyz"
         // Get the project-id from Rancher UI (projects/namespaces --> petclinic-cluster-staging namespace --> Edit yaml --> copy projectId )
-        RANCHER_CONTEXT="********" 
+        RANCHER_CONTEXT="c-2pmph:p-dcm87" 
        //First part of projectID
-        CLUSTERID="********"
-        RANCHER_CREDS=credentials('rancher-petclinic-credential')
+        CLUSTERID="c-2pmph"
+        RANCHER_CREDS=credentials('rancher-credentials')
     }
     stages {
         stage('Package Application') {
